@@ -1,0 +1,19 @@
+# 本地产物与用户数据（含 API Key、对话记录），不入库
+/dist/
+/user_data_backup/
+/.lead/
+
+# 圆屏 CS2 示例的构建产物与签名
+/cs2watch_round/build/
+/cs2watch_round/*.apk
+/cs2watch_round/*.idsig
+/cs2watch_round/debug.keystore
+/cs2watch_round/tools/r8.jar
+*.keystore
+*.jks
+
+# 编辑器构建目录里只保留打包脚本
+/editor/build/*
+!/editor/build/pack.sh
+!/editor/build/stop_editor.ps1
+!/editor/build/where.ps1

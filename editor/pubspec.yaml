@@ -1,0 +1,35 @@
+name: android_watch_editor
+description: "安卓手表软件编辑器：基于 DeepSeek 的手表 APK 生成、构建、安装与调试 agent。"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.6.0
+  path: ^1.9.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  # Flutter 的资源声明不递归：每个子目录都要单独列出（test/assets_declared_test.dart 会检查）。
+  assets:
+    - assets/prompts/
+    - assets/icon/
+    - assets/skills/oppo-watch2-apk/
+    - assets/skills/oppo-watch2-apk/references/
+    - assets/skills/oppo-watch2-apk/templates/
+    - assets/skills/oppo-watch2-apk/templates/res/values/
+    - assets/skills/oppo-watch2-apk/templates/res/mipmap-anydpi-v26/
+    - assets/skills/oppo-watch2-apk/templates/res/drawable/
+    - assets/skills/oppo-watch2-apk/templates/tools/
+    - assets/skills/oppo-watch-round-apk/
+    - assets/skills/oppo-watch-round-apk/references/
